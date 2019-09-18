@@ -1,7 +1,7 @@
 from selenium import webdriver
 import re
 
-chromedriver = "C:\\Users\\Hongy\\Desktop\\chromedriver"
+chromedriver = "./chromedriver"
 driver = webdriver.Chrome(chromedriver)
 url = "https://www.basketball-reference.com/contracts/"
 salary_xpath = list('// *[ @ id = "contracts"] / tbody / tr[x] / td[2]')
