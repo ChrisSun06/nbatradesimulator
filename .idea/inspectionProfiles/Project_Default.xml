@@ -268,7 +268,9 @@
     <inspection_tool class="JSValidateTypes" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="JSXNamespaceValidation" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="Jscs" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="Json5StandardCompliance" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="JsonDuplicatePropertyKeys" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="JsonSchemaCompliance" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="JsonStandardCompliance" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="LabeledStatementJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="LessResolvedByNameOnly" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
@@ -284,6 +286,7 @@
     <inspection_tool class="LossyEncoding" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MagicNumberJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MakoArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MarkdownUnresolvedFileReference" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MysqlParsingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="NegatedConditionalExpressionJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NegatedIfStatementJS" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -333,6 +336,7 @@
     <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyArgumentListInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyAssignmentToLoopOrWithParameterInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyAsyncCallInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyAttributeOutsideInitInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyBDDParametersInspection" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -355,6 +359,7 @@
         </value>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyDataclassInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyDecoratorInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyDefaultArgumentInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyDeprecationInspection" enabled="true" level="ERROR" enabled_by_default="true" />
@@ -392,11 +397,18 @@
         </value>
       </option>
     </inspection_tool>
-    <inspection_tool class="PyPep8Inspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E722" />
+        </list>
+      </option>
+    </inspection_tool>
     <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyPropertyAccessInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyPropertyDefinitionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyProtectedMemberInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyProtocolInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyRaisingNewStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyRedeclarationInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyRedundantParenthesesInspection" enabled="true" level="WARNING" enabled_by_default="true">
@@ -412,10 +424,12 @@
     <inspection_tool class="PyStringExceptionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyStringFormatInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PySuperArgumentsInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyTestParametrizedInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyTrailingSemicolonInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyTupleAssignmentBalanceInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyTupleItemAssignmentInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyTypeCheckerInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyTypeHintsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyUnboundLocalVariableInspection" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="PyUnnecessaryBackslashInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyUnreachableCodeInspection" enabled="true" level="ERROR" enabled_by_default="true" />
@@ -424,6 +438,7 @@
       <option name="ignoreTupleUnpacking" value="true" />
       <option name="ignoreLambdaParameters" value="true" />
       <option name="ignoreLoopIterationVariables" value="true" />
+      <option name="ignoreVariablesStartingWithUnderscore" value="true" />
     </inspection_tool>
     <inspection_tool class="PyramidSetupInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="Query_bound_parameters" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -437,6 +452,7 @@
     <inspection_tool class="RegExpRedundantEscape" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpRepeatedSpace" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpSingleCharAlternation" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpUnexpectedAnchor" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RepeatedSpace" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ReplaceAssignmentWithOperatorAssignmentJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RequiredAttributes" enabled="false" level="WARNING" enabled_by_default="false">
@@ -547,5 +563,10 @@
     <inspection_tool class="XmlUnboundNsPrefix" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="XmlUnusedNamespaceDeclaration" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="XmlWrongRootElement" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="YAMLDuplicatedKeys" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="YAMLRecursiveAlias" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="YAMLSchemaValidation" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="YAMLUnresolvedAlias" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="YAMLUnusedAnchor" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>
